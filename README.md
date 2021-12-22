@@ -1,4 +1,4 @@
-# Url-Shortener_CF-Worker
+# Url Shortener
 A URL Shortener created using Cloudflare Workers
 
 # API
