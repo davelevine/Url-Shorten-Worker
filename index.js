@@ -99,7 +99,7 @@ async function handleRequest(request) {
   console.log(path)
   if(!path){
 
-    const html= await fetch("https://cdn.jsdelivr.net/gh/davelevine/url-shortener@gh-pages/index.html")
+    const html= await fetch("https://davelevine.github.io/url-shortener/"+config.theme+"/index.html")
     
     return new Response(await html.text(), {
     headers: {
