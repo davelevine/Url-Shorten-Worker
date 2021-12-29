@@ -48,7 +48,7 @@ const config = {
       let is_exist=await LINKS.get(random_key)
       console.log(is_exist)
       if (is_exist == null)
-          return await LINKS.put(random_key, URL),random_key
+      return await LINKS.put(random_key, URL, {expirationTTL: 60*60*24}),random_key
       else
           save_url(URL)
   }
